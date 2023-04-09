@@ -1,5 +1,6 @@
 * {
     font-family: 'Volkhov', serif;
+    
 }
 
 html,
@@ -15,6 +16,7 @@ body {
     --white: white;
     --black: black;
     --gray: #fafafa;
+    --black1: #060606;
 }
 
 [data-theme="dark"] {
@@ -22,6 +24,132 @@ body {
     --black: white;
     --gray: black;
 }
+
+
+/* HEADER */
+header{
+    position: absolute;
+    /* kích thước cho background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+}
+.navbar{
+    /* màu trong suốt */
+    background: transparent;
+}
+header .header__top{
+    width: 95%;
+    margin: auto;
+}
+.header__left a{
+    font-size: 32px;
+    color: var(--text-color) !important;
+    padding: 0;
+    position: relative;
+    transition: all .5s;
+}
+.header__left a i{
+    position: absolute;
+    font-size: 20px;
+    right: 90px;
+    bottom: 30px;
+}
+.header__left a:hover{
+    color: var(--black1) !important;
+}
+.header__search {
+    background: #fff url(../img/search.png) no-repeat 10px center;
+    border: solid 1px #eee;
+    padding: 0 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all .5s;
+    cursor: pointer;
+    /* làm mất viền ngoài khung */
+    outline: none;
+}
+.header__search:focus {
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 36px;
+    cursor: auto;
+}
+
+.fa-moon{
+    font-size: 1.4rem;
+    padding: 6px 0;
+    transform: rotate(-25deg);
+    color: var(--white);
+    margin: 0 15px;
+}
+.fa-moon:hover{
+    color: var(--text-color);
+}
+.fa-bars{
+    font-size: 1.4rem;      
+    color: var(--white);
+}
+.header__right .navbar-nav .dropdown-menu{
+    background-color: white;    
+    left: -195px;
+    bottom: 200x;
+    box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
+    border: 1px solid transparent;
+}
+.header__right .navbar-nav .dropdown-menu a{
+    font-family: 'Source Sans Pro', sans-serif;
+    display: block;
+    padding: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black1);
+    transition: all .5s;
+    outline: none;  
+}
+.header__right .navbar-nav .dropdown-menu a:first-child{
+    border-radius: 6px 6px 0 0;
+}
+.header__right .navbar-nav .dropdown-menu a:last-child{
+    border-radius: 0 0 6px 6px;
+}
+.header__right .navbar-nav .dropdown-menu{
+    min-width: 14rem;
+    max-height: 400px;
+    padding: 0;
+}
+.dropdown-toggle::after{
+    content: "";
+    border: none;
+}
+.header__right .dropdown-item{    
+    background-color: var(--white);
+    color: var(--text-color);
+}
+.dropdown-item:hover{
+   background-color: var(--white);   
+}
+header .header__right .dropdown-menu .active{
+    color: var(--text-color);
+}
+header .header__right .dropdown-menu a:hover{
+    color: var(--text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ORGANIC  */
 
 .organic {
@@ -369,4 +497,12 @@ body {
 
 .items .items__content:hover h3 {
     color: #009f4d !important;
+}
+@keyframes submenu{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(266px);       
+    }
 }
