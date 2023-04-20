@@ -95,7 +95,7 @@ header.main-header {
 }
 
 header .header__top {
-    /* padding-left: 30px; */
+    padding-left: 30px;
 }
 
 .header__left a {
@@ -427,9 +427,6 @@ header .collapse {
     opacity: 0.14;
 }
 
-.organic__content__item {
-    justify-content: center;
-}
 
 .oganic__item {
     margin: 0 auto;
@@ -438,10 +435,21 @@ header .collapse {
     border: 0px;
 }
 
-/* 
 @media screen and (max-width:992px) {
     .oganic__item {
         margin-top: 24px;
+    }
+
+    .organic__content h1 {
+        font-size: 1.7rem;
+    }
+
+    .organic__content h5 {
+        padding-top: 38px;
+    }
+
+    .organic__content p {
+        font-size: 0.9rem;
     }
 }
 
@@ -478,17 +486,20 @@ header .collapse {
     text-align: center;
     line-height: 1.9rem;
     font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .card-title {
     font-weight: 400;
     font-size: 1.7rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .card-text {
     font-size: 1rem;
     color: #888;
-    line-height: 1.7rem;
+    line-height: 1.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .card-body {
@@ -496,18 +507,21 @@ header .collapse {
     padding-bottom: 5vh;
 }
 
+.organic__content__item {
+    justify-content: center;
+}
 
 /* QUALITY  */
 
 .quality__content h4 {
     color: var(--text-color);
     letter-spacing: 1px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding-bottom: 0;
 }
 
 .quality__content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -517,8 +531,10 @@ header .collapse {
 
 .quality__content p {
     color: #888;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
+    line-height: 1.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .quality__content i {
@@ -527,16 +543,16 @@ header .collapse {
 }
 
 .quality__content span {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-weight: 700;
     padding-left: 6px;
-    padding-bottom: 12px;
+    padding-bottom: 18px;
 }
 
 .quality__img {}
 
 .quality__img__container {
-    padding-left: 100px;
+    padding-left: 64px;
     border-radius: 24px;
     overflow: hidden;
     height: 100%;
@@ -562,17 +578,19 @@ header .collapse {
 }
 
 .quality__number h1 {
-    font-size: 5rem;
+    font-size: 4.8rem;
     color: var(--white);
     font-weight: 700;
     margin-bottom: 0;
+    padding: 8px 0 4px 0;
 }
 
 .quality__number p {
     color: var(--white);
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -610,7 +628,7 @@ header .collapse {
     .quality__content p {
         font-size: 3vw;
         padding-left: 48px;
-        padding-right: 48px;
+        line-height: 1.2rem;
     }
 
 
@@ -648,7 +666,6 @@ header .collapse {
     .quality__number p {
         font-size: 2vw;
     }
-} */
 
 /* ITEMS  */
 
@@ -660,6 +677,10 @@ header .collapse {
     font-size: 1.6rem;
     font-weight: 700;
     transition: all 0.5s;
+}
+
+.items__content p {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .items__content {
@@ -679,44 +700,8 @@ header .collapse {
     cursor: pointer;
 }
 
-/* @media screen and (max-width: 786px) {
-    .items__content img {
-        width: 90px;
-        height: 90px;
-    }
 
-    .items__content h3 {
-        padding-left: 24px;
-    }
 
-    .items__content p {
-        padding-left: 24px;
-    }
-}
-
-@media screen and (max-width: 568px) {
-    .items__content img {
-        width: 15vw;
-        height: 15vw;
-    }
-
-    .items__content h3 {
-        padding-left: 0;
-        font-size: 3vw;
-    }
-
-    .items__content p {
-        padding-left: 0;
-        font-size: 3vw;
-    }
-} */
-
-/* DARK THEME  */
-
-:root {
-    --background-darktheme: #222222;
-    --color-darktheme: #ffffff;
-}
 
 .themedark {
     background: var(--background-darktheme);
@@ -724,6 +709,10 @@ header .collapse {
 
 .text-white {
     color: var(--color-darktheme);
+}
+
+.text-dark {
+    color: var(--text-dark);
 }
 
 .items__content p {
@@ -737,6 +726,7 @@ header .collapse {
 .items .items__content:hover h3 {
     color: #009f4d !important;
 }
+
 
 
 
