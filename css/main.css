@@ -735,6 +735,19 @@ header .collapse {
     background-color: var(--dark);
     color: white;
 }
+.white-color {
+    color: var(--white)!important;
+}
+.dark-color {
+    color: var(--dark)!important;
+}
+.dark-theme {
+    background-color: var(--dark)!important;
+}
+.white-theme {
+    background-color: var(--gray)!important;
+}
+
 /* Header(Dark-White) */
 .main-header .header__left .a-dark:hover{
     color: var(--white1) !important;
@@ -794,6 +807,11 @@ header .collapse {
 .natural .natural__right .dw-sha4-na:hover{
     box-shadow: 0 25px 100px 0 rgb(0 0 0 / 15%);
 }
+
+
+/*------------ Dark - White Theme card-body ---------- */
+
+
 /*<------- MEDIA OF NGUYÊN --------> */
 /*RESPONSIVE HEADER */
 @media screen and (max-width:1200px) {
