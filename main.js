@@ -29,21 +29,6 @@ var dark = document.getElementById("dark").onclick = function() {
     document.getElementById("theme11").classList.add("dw-sha2-na");
     document.getElementById("theme12").classList.add("dw-sha3-na");
     document.getElementById("theme13").classList.add("dw-sha4-na");
-    var card__btn = document.querySelectorAll('.card-btn');
-    var card__title = document.querySelectorAll('.card-title');
-    var card__body = document.querySelectorAll('.card-body');
-    for (
-      i=0;
-      i< card__btn.length;
-      i++
-    ) {
-      card__btn[i].classList.add('white-color');
-      card__title[i].classList.add('white-color');
-      card__body[i].classList.add('dark-theme');
-      card__btn[i].classList.remove('dark-color');
-      card__title[i].classList.remove('dark-color');
-      card__body[i].classList.remove('white-theme');
-    }
 };
 // LIGHT
 var white = document.getElementById("white").onclick = function() {
@@ -74,25 +59,10 @@ var white = document.getElementById("white").onclick = function() {
     document.getElementById("theme11").classList.remove("dw-sha2-na");
     document.getElementById("theme12").classList.remove("dw-sha3-na");
     document.getElementById("theme13").classList.remove("dw-sha4-na");
-    var card__btn = document.querySelectorAll('.card-btn');
-    var card__title = document.querySelectorAll('.card-title');
-    var card__body = document.querySelectorAll('.card-body');
-    for (
-      i=0;
-      i< card__btn.length;
-      i++
-    ) {
-      card__btn[i].classList.add('dark-color');
-      card__title[i].classList.add('dark-color');
-      card__body[i].classList.add('white-theme');
-      card__btn[i].classList.remove('white-color');
-      card__title[i].classList.remove('white-color');
-      card__body[i].classList.remove('dark-theme');
-    }
+
 };
 
 document.getElementById("white").style.display = "none";
-
 // -----DROPDOWN-MENU-----
 
 // Add slideDown animation to Bootstrap dropdown when expanding.
@@ -104,5 +74,3 @@ $('.dropdown').on('show.bs.dropdown', function() {
   $('.dropdown').on('hide.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
   });
-
-
