@@ -380,6 +380,24 @@ header .collapse {
 .natural__right .natural__item a:hover {
     color: var(--mainbackgroud-color);
 }
+/*
+--------------Bảo Dark Light Theme-------------------
+*/
+.dark-theme-bao {
+    background-color: var(--dark)!important;
+}
+
+.white-theme-bao {
+    background-color: var(--white)!important;
+}
+
+.white-color-bao {
+    color: var(--white)!important;
+}
+
+.dark-color-bao {
+    color: var(--dark)!important;
+}
 
 
 /* ORGANIC  */
@@ -435,6 +453,35 @@ header .collapse {
     border: 0px;
 }
 
+
+.organic .organic__content--text-1 {
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .organic__content h5 {
+        font-size: 1.2rem;
+    }
+
+    .organic__content h1 {
+        font-size: 2.3rem;
+    }
+
+    .organic__content--text-1 {
+        font-size: 0.9rem !important;
+        font-weight: 300;
+    }
+
+    .card-title {
+        font-size: 1.2rem !important;
+    }
+
+    .card-text {
+        font-size: 0.9rem !important;
+    }
+}
+
 @media screen and (max-width:992px) {
     .oganic__item {
         margin-top: 24px;
@@ -475,7 +522,7 @@ header .collapse {
         padding-right: 38px;
         line-height: 4vw;
     }
-} */
+}
 
 .card-btn {
     color: var(--mainbackgroud-color);
@@ -594,7 +641,7 @@ header .collapse {
 }
 
 
-/* @media screen and (max-width: 1230px) {
+@media screen and (max-width: 1230px) {
     .quality__img__container {
         padding: 64px 0 64px 36px;
     }
@@ -666,6 +713,7 @@ header .collapse {
     .quality__number p {
         font-size: 2vw;
     }
+}
 
 /* ITEMS  */
 
@@ -700,31 +748,36 @@ header .collapse {
     cursor: pointer;
 }
 
+@media screen and (max-width: 786px) {
+    .items__content img {
+        width: 90px;
+        height: 90px;
+    }
 
+    .items__content h3 {
+        padding-left: 24px;
+    }
 
-
-.themedark {
-    background: var(--background-darktheme);
+    .items__content p {
+        padding-left: 24px;
+    }
 }
 
-.text-white {
-    color: var(--color-darktheme);
-}
+@media screen and (max-width: 568px) {
+    .items__content img {
+        width: 15vw;
+        height: 15vw;
+    }
 
-.text-dark {
-    color: var(--text-dark);
-}
+    .items__content h3 {
+        padding-left: 0;
+        font-size: 3vw;
+    }
 
-.items__content p {
-    color: #888;
-}
-
-.items__content h3 {
-    transition: all 0.5s;
-}
-
-.items .items__content:hover h3 {
-    color: #009f4d !important;
+    .items__content p {
+        padding-left: 0;
+        font-size: 3vw;
+    }
 }
 
 
