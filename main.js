@@ -1,6 +1,6 @@
 // DARK THEME(NGUYÊN)
 // DARK
-var dark = document.getElementById("dark").onclick = function () {
+var dark = (document.getElementById("dark").onclick = function () {
   document.getElementById("switch-theme").className = "dark-white";
   document.getElementById("white").style.display = "inline-block";
   document.getElementById("dark").style.display = "none";
@@ -30,19 +30,54 @@ var dark = document.getElementById("dark").onclick = function () {
   document.getElementById("theme12").classList.add("dw-sha3-na");
   document.getElementById("theme13").classList.add("dw-sha4-na");
 
+  //gallery shadow
+  document.getElementById("theme14").classList.add("gallery-dw-h3");
+  document.getElementById("theme15").classList.add("gallery-dw-p");
+
+  //footer
+  //the h3
+  document.getElementById("theme16").classList.add("footer-dw-h3-1");
+  //the p
+  document.getElementById("theme17").classList.add("footer-dw-p-1");
+  document.getElementById("theme18").classList.add("footer-dw-p-2");
+  document.getElementById("theme19").classList.add("footer-dw-p-3");
+  document.getElementById("theme20").classList.add("footer-dw-p-4");
+  //the a
+  document.getElementById("theme21").classList.add("footer-dw-a-1");
+  document.getElementById("theme22").classList.add("footer-dw-a-2");
+  document.getElementById("theme23").classList.add("footer-dw-a-3");
+  //the p
+  document.getElementById("theme24").classList.add("footer-dw-p-5");
+  document.getElementById("theme25").classList.add("footer-dw-p-6");
+  document.getElementById("theme26").classList.add("footer-dw-p-7");
+  //the a
+  document.getElementById("theme27").classList.add("footer-dw-a-4");
+  //the h3
+  document.getElementById("theme28").classList.add("footer-dw-h3-2");
+  //the p
+  document.getElementById("theme29").classList.add("footer-dw-p-8");
+  //input
+  document.getElementById("theme30").classList.add("footer-dw-input");
+  // the a
+  document.getElementById("theme31").classList.add("footer-dw-a-5");
+  document.getElementById("theme32").classList.add("footer-dw-a-6");
+  document.getElementById("theme33").classList.add("footer-dw-a-7");
+  document.getElementById("theme34").classList.add("footer-dw-a-8");
+  document.getElementById("theme35").classList.add("footer-dw-a-9");
+
   // Bao Dark theme
 
-  var bg__bao = document.querySelectorAll('.bg-bao');
-  var cl__bao = document.querySelectorAll('.cl-bao');
+  var bg__bao = document.querySelectorAll(".bg-bao");
+  var cl__bao = document.querySelectorAll(".cl-bao");
   for (i = 0; i < bg__bao.length; i++) {
-    bg__bao[i].classList.add('dark-theme-bao');
-    bg__bao[i].classList.remove('white-theme-bao');
-    cl__bao[i].classList.add('white-color-bao');
-    cl__bao[i].classList.remove('dark-color-bao');
+    bg__bao[i].classList.add("dark-theme-bao");
+    bg__bao[i].classList.remove("white-theme-bao");
+    cl__bao[i].classList.add("white-color-bao");
+    cl__bao[i].classList.remove("dark-color-bao");
   }
-};
+});
 // LIGHT
-var white = document.getElementById("white").onclick = function () {
+var white = (document.getElementById("white").onclick = function () {
   document.getElementById("switch-theme").classList.remove("dark-white");
   document.getElementById("dark").style.display = "inline-block";
   document.getElementById("white").style.display = "none";
@@ -71,28 +106,61 @@ var white = document.getElementById("white").onclick = function () {
   document.getElementById("theme12").classList.remove("dw-sha3-na");
   document.getElementById("theme13").classList.remove("dw-sha4-na");
 
-  // Bao White Theme 
-  var bg__bao = document.querySelectorAll('.bg-bao');
-  var cl__bao = document.querySelectorAll('.cl-bao');
+  //gallery shadow
+  document.getElementById("theme14").classList.remove("gallery-dw-h3");
+  document.getElementById("theme15").classList.remove("gallery-dw-p");
+
+  //footer
+  //the h3
+  document.getElementById("theme16").classList.remove("footer-dw-h3-1");
+  //the p
+  document.getElementById("theme17").classList.remove("footer-dw-p-1");
+  document.getElementById("theme18").classList.remove("footer-dw-p-2");
+  document.getElementById("theme19").classList.remove("footer-dw-p-3");
+  document.getElementById("theme20").classList.remove("footer-dw-p-4");
+  //the a
+  document.getElementById("theme21").classList.remove("footer-dw-a-1");
+  document.getElementById("theme22").classList.remove("footer-dw-a-2");
+  document.getElementById("theme23").classList.remove("footer-dw-a-3");
+  //the p
+  document.getElementById("theme24").classList.remove("footer-dw-p-5");
+  document.getElementById("theme25").classList.remove("footer-dw-p-6");
+  document.getElementById("theme26").classList.remove("footer-dw-p-7");
+  //the a
+  document.getElementById("theme27").classList.remove("footer-dw-a-4");
+  //the h3
+  document.getElementById("theme28").classList.remove("footer-dw-h3-2");
+  //the p
+  document.getElementById("theme29").classList.remove("footer-dw-p-8");
+  //input
+  document.getElementById("theme30").classList.remove("footer-dw-input");
+  // the a
+  document.getElementById("theme31").classList.remove("footer-dw-a-5");
+  document.getElementById("theme32").classList.remove("footer-dw-a-6");
+  document.getElementById("theme33").classList.remove("footer-dw-a-7");
+  document.getElementById("theme34").classList.remove("footer-dw-a-8");
+  document.getElementById("theme35").classList.remove("footer-dw-a-9");
+
+  // Bao White Theme
+  var bg__bao = document.querySelectorAll(".bg-bao");
+  var cl__bao = document.querySelectorAll(".cl-bao");
   for (i = 0; i < bg__bao.length; i++) {
-    bg__bao[i].classList.add('white-theme-bao');
-    bg__bao[i].classList.remove('dark-theme-bao');
-    cl__bao[i].classList.add('dark-color-bao');
-    cl__bao[i].classList.remove('white-color-bao');
-  };
-};
+    bg__bao[i].classList.add("white-theme-bao");
+    bg__bao[i].classList.remove("dark-theme-bao");
+    cl__bao[i].classList.add("dark-color-bao");
+    cl__bao[i].classList.remove("white-color-bao");
+  }
+});
 
 document.getElementById("white").style.display = "none";
 // -----DROPDOWN-MENU-----
 
 // Add slideDown animation to Bootstrap dropdown when expanding.
-$('.dropdown').on('show.bs.dropdown', function () {
-  $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+$(".dropdown").on("show.bs.dropdown", function () {
+  $(this).find(".dropdown-menu").first().stop(true, true).slideDown();
 });
 
 // Add slideUp animation to Bootstrap dropdown when collapsing.
-$('.dropdown').on('hide.bs.dropdown', function () {
-  $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+$(".dropdown").on("hide.bs.dropdown", function () {
+  $(this).find(".dropdown-menu").first().stop(true, true).slideUp();
 });
-
-
