@@ -990,14 +990,18 @@ header .collapse {
 }
 
 /* IPHONE 5(BANNER) */
-@media screen and (min-width: 319.98px) and (max-width: 568px) {
-  .banner .banner__left h1 {
-    position: absolute;
-    top: 15%;
-    left: 38%;
-    transform: translate(-50%, -50%);
-    font-size: 15vw;
-  }
+@media screen and (min-width: 319.98px) and (max-width:568px) {
+    .banner .banner__left h1 {
+        position: absolute;
+        top: 15%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        font-size: 15vw;
+    }
+    
+    .banner .banner__left h2 {
+        font-size: 25px;
+    }
 
   .banner .banner__left h2 {
     font-size: 25px;
